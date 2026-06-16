@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import path from "path";
 
 export default function AdminLayout({
   children,
@@ -13,6 +14,7 @@ export default function AdminLayout({
   const MENU_ITEMS = [
     { name: "RINGKASAN", path: "/admin" },
     { name: "DAFTAR TEMPAT", path: "/admin/daftar-tempat" },
+    { name: "DAFTAR MENU", path: "/admin/daftar-menu"},
     { name: "PENGATURAN", path: "/admin/pengaturan" },
   ];
 
