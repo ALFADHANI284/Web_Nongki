@@ -6,7 +6,6 @@ import Image from "next/image";
 export default function TentangKamiPage() {
   return (
     <main className="min-h-screen bg-[#FCF9F2] text-[#4A2C1A] font-sans relative pb-24 overflow-hidden">
-      {/* Pola background halus */}
       <div
         className="absolute inset-0 opacity-5 pointer-events-none z-0"
         style={{
@@ -16,7 +15,7 @@ export default function TentangKamiPage() {
         }}
       />
 
-      {/* Navigasi / Breadcrumb Text Saja */}
+      {/* Navigasi */}
       <div className="max-w-6xl mx-auto px-6 py-8 relative z-10">
         <Link href="/" className="text-xs font-bold tracking-widest text-[#A67C52] hover:text-[#4A2C1A] uppercase transition-colors">
           KEMBALI KE BERANDA
@@ -36,7 +35,7 @@ export default function TentangKamiPage() {
           </h1>
         </header>
 
-        {/* STORY SECTION (Layout Majalah 2 Kolom) */}
+        {/* STORY SECTION */}
         <section className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-32 items-center">
           <div className="space-y-6">
             <h2 className="text-2xl font-black tracking-widest text-[#4A2C1A] uppercase border-l-4 border-[#A67C52] pl-6">
@@ -65,7 +64,7 @@ export default function TentangKamiPage() {
           </div>
         </section>
 
-        {/* VALUES SECTION (Tipografi Besar sebagai pengganti ikon) */}
+        {/* VALUES SECTION */}
         <section className="mb-24">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-black tracking-widest text-[#4A2C1A] uppercase">
