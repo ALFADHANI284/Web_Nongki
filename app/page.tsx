@@ -51,13 +51,18 @@ export default function Home() {
           <div className="flex items-center gap-10">
             {/* Navigasi Utama */}
             <nav className="hidden md:flex items-center gap-8">
-              {['BERANDA', 'LOKASI', 'MENU', 'TENTANG KAMI'].map((item) => (
+              {[
+                { name: 'BERANDA', href: '/' },
+                { name: 'LOKASI', href: '/explore' }, 
+                { name: 'MENU', href: '/#menu' }, 
+                { name: 'TENTANG KAMI', href: '/about' }, 
+              ].map((item) => (
                 <Link
-                  key={item}
-                  href="#"
+                  key={item.name}
+                  href={item.href}
                   className="text-xs font-bold tracking-wider text-[#4A2C1A]/80 hover:text-[#A67C52] transition-colors"
                 >
-                  {item}
+                  {item.name}
                 </Link>
               ))}
             </nav>
